@@ -13,5 +13,10 @@ class MainActivity : AppCompatActivity() {
         val aiueo = "こんにちは" as String
 
         Log.d("メモ", aiueo)
+
+        when(aiueo) {
+            is String -> println("aaa")
+            else ->
+        }
     }
 }
