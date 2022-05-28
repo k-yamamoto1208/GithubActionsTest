@@ -14,9 +14,5 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("メモ", aiueo)
 
-        when(aiueo) {
-            is String -> println("aaa")
-            else ->
-        }
     }
 }
