@@ -24,6 +24,13 @@ jobs:
       with:
         ruby-version: '2.6'
         architecture: 'x64'
+    - name: cache bundle
+      uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
     - name: install danger
       run: |
         gem install bundler
