@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val aiueo = "こんにちは" as String
+        val aiueo="こんにちは"
 
         Log.d("メモ", aiueo)
 
