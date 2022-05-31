@@ -7,10 +7,9 @@ import android.util.Log
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main)
 
-
-        val aiueo="こんにちは"
+        val aiueo = "こんにちは"
 
         Log.d("メモ", aiueo)
 
