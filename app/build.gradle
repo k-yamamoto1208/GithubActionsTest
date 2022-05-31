@@ -43,7 +43,7 @@ dependencies {
 }
 
 ktlint {
-    version = "0.22.0"
+    version = "0.45.2"
     android = true
     reporters {
         reporter "checkstyle"
