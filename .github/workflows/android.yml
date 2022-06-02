@@ -1,8 +1,6 @@
 name: Android CI
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -15,9 +13,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: Setup ruby
         uses: actions/setup-ruby@v1
-        with:
-          ruby-version: '2.6'
-          architecture: 'x64'
       - name: cache bundle
         uses: actions/cache@v2
         with:
@@ -28,6 +23,7 @@ jobs:
       - name: install danger
         run: |
           gem install bundler
+          bundle config path vender/bundle
           bundle install
       - name: ktlint check
         run: ./gradlew ktlintCheck
