@@ -23,7 +23,7 @@ jobs:
       - name: install danger
         run: |
           gem install bundler
-          bundle config set path 'vender/bundle'
+          bundle config path vender/bundle
           bundle install
       - name: ktlint check
         run: ./gradlew ktlintCheck
