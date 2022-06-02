@@ -1,8 +1,8 @@
 package com.example.githubactionstest
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,6 +12,5 @@ class MainActivity : AppCompatActivity() {
         val aiueo = "こんにちは"
 
         Log.d("メモ", aiueo)
-
     }
 }
